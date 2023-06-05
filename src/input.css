@@ -1,0 +1,28 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+body {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+.input {
+  width: auto;
+}
+.card-content {
+  display: block;
+  line-height: 32px;
+  margin-bottom: 8px;
+}
+.card-title {
+  color: rgb(99, 100, 101);
+  font-size: 30px;
+  font-weight: 300;
+}
+#task-title {
+  color: rgb(99, 100, 101);
+  font-size: 30px;
+  font-weight: 400;
+  margin: 0.82rem 0 0.656rem 0;
+}

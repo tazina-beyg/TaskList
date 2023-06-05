@@ -1,0 +1,79 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="stylesheet" href="output.css" />
+    <link rel="stylesheet" href="input.css" />
+    <script
+      src="https://kit.fontawesome.com/601203f670.js"
+      crossorigin="anonymous"
+    ></script>
+    <script src="https://cdn.tailwindcss.com"></script>
+    <title>TO-Do</title>
+  </head>
+  <title>Task List</title>
+  <body>
+    <div class="container mx-auto">
+      <div
+        class="row w-full bg-white border border-gray-300 shadow light:border-gray-800 items-center my-12"
+      >
+        <div class="  ">
+          <div id="main" class="card">
+            <div class="card-content p-8">
+              <span class="card-title block leading-8 mb-4 font-sans"
+                >Task List</span
+              >
+              <div class="row">
+                <form id="task-form" class="">
+                  <div class="mb-4">
+                    <input
+                      type="text"
+                      name="task"
+                      id="task"
+                      placeholder="New Task"
+                      class="border outline-none px-3 py-2 rounded-md w-full"
+                    />
+                  </div>
+                  <input
+                    type="submit"
+                    value="Add Task"
+                    class="btn py-1 px-8 bg-teal-500 border active:bg-gray-200 font-medium border-gray-200 text-white"
+                  />
+                </form>
+              </div>
+            </div>
+            <div class="card-action p-8">
+              <h5 id="task-title">Tasks</h5>
+              <div class="input-field">
+                <input
+                  type="text"
+                  name="filter"
+                  id="filter"
+                  placeholder="Filter"
+                  class="border outline-none px-3 py-2 rounded-md w-full mb-8"
+                />
+              </div>
+              <ul
+                class="collection"
+                style="
+                  display: flex;
+                  flex-direction: column;
+                  gap: 10px;
+                  margin-bottom: 16px;
+                "
+              ></ul>
+              <a
+                href="#"
+                class="clear-tasks btn py-2 px-8 bg-black border active:bg-gray-200 font-medium border-gray-200 text-white justify-center"
+                >Clear Tasks</a
+              >
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+    <script src="/app.js"></script>
+  </body>
+</html>
